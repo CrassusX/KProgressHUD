@@ -14,12 +14,12 @@ apply plugin: 'com.android.library'
 project.archivesBaseName = 'kprogresshud'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 26
+        minSdkVersion 21
+        targetSdkVersion 30
         versionCode 120
         versionName "1.2.0"
     }
@@ -91,8 +91,6 @@ artifacts {
 
 // Bintray
 Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-
 bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")

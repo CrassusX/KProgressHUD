@@ -16,6 +16,7 @@
 
 package com.kaopiz.kprogresshud;
 
+import com.kaopiz.kprogresshud.R;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
